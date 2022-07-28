@@ -8,7 +8,7 @@ const socket = io();
 
 //on para escuchar un evento
 socket.on('connect', () =>{
-    console.log('Conectado');
+    //console.log('Conectado');
 
     //muestra solo el conectado y oculta el desconectado.
     lblOffline.style.display = 'none';
@@ -16,7 +16,7 @@ socket.on('connect', () =>{
 
 });
 socket.on('disconnect', () =>{
-    console.log('Desconectado del servidor');
+    //console.log('Desconectado del servidor');
 
     lblOffline.style.display = '';
     lblOnline.style.display = 'none';
